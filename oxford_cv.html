@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jyotsna Dsilva - Curriculum Vitae</title>
+  <style>
+    
+    @page {
+      size: A4 portrait;
+      margin: 8mm 13mm 8mm 13mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Cambria', 'Georgia', 'Times New Roman', serif;
+      font-size: 8.5pt;
+      line-height: 1.24;
+      color: #1a1a1a;
+      background: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 8px;
+      border-bottom: 2px solid #002147;
+      padding-bottom: 7px;
+    }
+
+    .header-name {
+      font-size: 19pt;
+      font-weight: 700;
+      color: #002147;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+      font-family: 'Georgia', 'Cambria', serif;
+    }
+
+    .header-subtitle {
+      font-size: 9.8pt;
+      font-weight: 600;
+      color: #2b2b2b;
+      margin-bottom: 4px;
+    }
+
+    .header-contact {
+      font-size: 8.5pt;
+      color: #3b3b3b;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .header-contact a {
+      color: #002147;
+      text-decoration: none;
+    }
+
+    /* Section Styling */
+    .section {
+      margin-bottom: 7px;
+    }
+
+    .section-title {
+      font-size: 9.8pt;
+      font-weight: 700;
+      color: #002147;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #002147;
+      padding-bottom: 1.5px;
+      margin-bottom: 4px;
+    }
+
+    /* Summary */
+    .summary-text {
+      font-size: 8.8pt;
+      text-align: justify;
+      color: #262626;
+      line-height: 1.35;
+    }
+
+    /* Experience Entries */
+    .entry {
+      margin-bottom: 4.5px;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1.5px;
+    }
+
+    .role-title {
+      font-size: 9.2pt;
+      font-weight: 700;
+      color: #111111;
+    }
+
+    .company-name {
+      font-style: italic;
+      color: #333333;
+      font-weight: 600;
+    }
+
+    .date-location {
+      font-size: 8.6pt;
+      font-weight: 600;
+      color: #002147;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .location {
+      font-style: italic;
+      color: #555555;
+      font-weight: 400;
+    }
+
+    /* Bullet Lists */
+    ul.bullets {
+      list-style-type: square;
+      padding-left: 14px;
+      margin-top: 1px;
+    }
+
+    ul.bullets li {
+      font-size: 8.6pt;
+      color: #222222;
+      margin-bottom: 1.5px;
+      line-height: 1.3;
+      text-align: justify;
+    }
+
+    ul.bullets li strong {
+      color: #050505;
+    }
+
+    /* Projects */
+    .project-entry {
+      margin-bottom: 4px;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .project-name {
+      font-size: 9pt;
+      font-weight: 700;
+      color: #111111;
+    }
+
+    .project-tech {
+      font-size: 8.4pt;
+      font-style: italic;
+      color: #002147;
+      font-weight: 600;
+    }
+
+    .project-desc {
+      font-size: 8.6pt;
+      color: #222222;
+      line-height: 1.3;
+      text-align: justify;
+    }
+
+    /* Education */
+    .edu-entry {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2.5px;
+    }
+
+    .edu-degree {
+      font-size: 9pt;
+      font-weight: 700;
+      color: #111111;
+    }
+
+    .edu-institution {
+      font-style: italic;
+      color: #333333;
+      font-weight: normal;
+    }
+
+    .edu-grade {
+      font-size: 8.6pt;
+      color: #002147;
+      font-weight: 600;
+    }
+
+    /* Skills Table / Grid */
+    .skills-block {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+    }
+
+    .skill-row {
+      display: flex;
+      font-size: 8.6pt;
+      line-height: 1.28;
+    }
+
+    .skill-label {
+      font-weight: 700;
+      color: #002147;
+      min-width: 148px;
+      flex-shrink: 0;
+    }
+
+    .skill-val {
+      color: #222222;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="header-name">Jyotsna Dsilva</h1>
+    <div class="header-subtitle">Pre-Sales Executive & Solutions Consultant | 5+ Years Pre-Sales & Development</div>
+    <div class="header-contact">
+      <span>Mangaluru, Karnataka, India</span>
+      <span>•</span>
+      <span>+91 9591470732</span>
+      <span>•</span>
+      <span><a href="mailto:jyotsnadsilva99@gmail.com">jyotsnadsilva99@gmail.com</a></span>
+      <span>•</span>
+      <span><a href="https://linkedin.com/in/jyotsna-dsilva-749945195">linkedin.com/in/jyotsna-dsilva-749945195</a></span>
+      <span>•</span>
+      <span><a href="https://jyotsnasdsilva.github.io/">jyotsnasdsilva.github.io</a></span>
+    </div>
+  </header>
+
+  <!-- Summary -->
+  <section class="section">
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="summary-text">
+      Client-focused Pre-Sales Executive with a strong technical background in software engineering and telephony systems. Experienced in requirement discovery, solution scoping, and delivering impactful product demonstrations across VoIP, SIP, and PSTN-based solutions. Skilled at translating complex telephony infrastructure into clear business value, ensuring successful delivery and high client satisfaction across the solution lifecycle.
+    </p>
+  </section>
+
+  <!-- Professional Experience -->
+  <section class="section">
+    <h2 class="section-title">Professional Experience</h2>
+
+    <!-- Epicode - Pre-Sales Executive -->
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="role-title">Pre-Sales Executive</span>, <span class="company-name">Epicode Pvt. Ltd.</span>
+        </div>
+        <div class="date-location">
+          <span>Apr 2025 – Sept 2026</span> | <span class="location">Udupi, India</span>
+        </div>
+      </div>
+      <ul class="bullets">
+        <li>Served as dedicated Pre-Sales point of contact for major teleservices and Voice AI enterprise accounts, leading requirement discussions and technical consultations.</li>
+        <li>Managed <strong>25+ customer demonstrations</strong>, analyzing business needs and mapping requirements to platform capabilities, call flows, SIP signaling, APIs, and workflows.</li>
+        <li>Supported <strong>20+ Voice AI leads</strong> through technical evaluation and onboarding, guiding telephony architecture and resolving solution requirements.</li>
+        <li>Conducted comprehensive requirements discovery, analyzing workflows, telephony environments, integration needs, and deployment constraints.</li>
+        <li>Translated client requirements into solution scope, technical documentation, architectural diagrams, SOW proposals, and implementation plans.</li>
+        <li>Collaborated with technical and business stakeholders to validate proposed solutions, custom integrations, and deployment approaches.</li>
+        <li>Architected, developed, and maintained Epicode's official developer documentation and API reference portal using <strong>Zudoku</strong>, structuring interactive OpenAPI documentation, SIP signaling workflows, and telephony middleware integration guides to accelerate technical evaluations.</li>
+      </ul>
+    </div>
+
+    <!-- Epicode - Web Developer -->
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="role-title">Web Developer</span>, <span class="company-name">Epicode Pvt. Ltd.</span>
+        </div>
+        <div class="date-location">
+          <span>Jun 2024 – Apr 2025</span> | <span class="location">Udupi, India</span>
+        </div>
+      </div>
+      <ul class="bullets">
+        <li>Developed microservices, REST APIs, and WebSocket applications in <strong>Golang</strong> and <strong>Python</strong> for real-time call metrics monitoring systems.</li>
+        <li>Automated Call Detail Record (CDR) processing pipelines, formatting raw session data into requested schemas and dispatching to client websites via webhooks.</li>
+        <li>Developed and maintained corporate websites and developer documentation sites using WordPress and web frameworks.</li>
+      </ul>
+    </div>
+
+    <!-- StatNFact -->
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="role-title">Co-Founder & Managing Director</span>, <span class="company-name">StatNFact Private Limited</span>
+        </div>
+        <div class="date-location">
+          <span>Jul 2023 – Mar 2024</span> | <span class="location">Udupi, India</span>
+        </div>
+      </div>
+      <ul class="bullets">
+        <li>Led solution pitching, business development, and bid management, securing incubation at Manipal GoK–Advanced Research Centre.</li>
+        <li>Managed end-to-end delivery of patient management systems, bridging client stakeholders with engineering teams to ensure on-time delivery.</li>
+      </ul>
+    </div>
+
+    <!-- Manipal Technologies -->
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="role-title">Associate Software Engineer</span>, <span class="company-name">Manipal Technologies Limited (MTL)</span>
+        </div>
+        <div class="date-location">
+          <span>Jan 2022 – Jun 2023</span> | <span class="location">Udupi, India</span>
+        </div>
+      </div>
+      <ul class="bullets">
+        <li>Developed and integrated Digital Asset Management Systems utilizing ASP.NET MVC, C#, jQuery, and Angular.</li>
+        <li>Led requirement analysis translating business needs into technical specifications; honored with <strong>Special Achievement Award (Q3)</strong>.</li>
+      </ul>
+    </div>
+
+    <!-- Centre for Software Development, MAHE -->
+    <div class="entry">
+      <div class="entry-header">
+        <div>
+          <span class="role-title">Trainee Software Engineer</span>, <span class="company-name">Centre for Software Development, MAHE</span>
+        </div>
+        <div class="date-location">
+          <span>Feb 2021 – Dec 2021</span> | <span class="location">Udupi, India</span>
+        </div>
+      </div>
+      <ul class="bullets">
+        <li>Redesigned management systems to improve operational usability for HR departments and healthcare organisations; conducted security vulnerability testing.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Key Projects & Initiatives -->
+  <section class="section">
+    <h2 class="section-title">Key Projects & Technical Initiatives</h2>
+    <div class="project-entry">
+      <div class="project-header">
+        <span class="project-name">Telephony Middleware & Voice Automation</span>
+        <span class="project-tech">VoIP, SIP Signaling, Golang, Python, WebSockets</span>
+      </div>
+      <p class="project-desc">Technical Pre-Sales architecture and solution prototyping for telephony middleware. Demonstrated real-time SIP call signaling, WebSocket streaming, and API orchestration to integrate voice automation into enterprise communication systems; conducted capacity planning and solution scoping.</p>
+    </div>
+    <div class="project-entry">
+      <div class="project-header">
+        <span class="project-name">Geospatial Analytics REST API & Visualization</span>
+        <span class="project-tech">Python, Flask REST API, Firebase, Geospatial Data</span>
+      </div>
+      <p class="project-desc">Engineered a modular REST API using Flask for automated analytical research outputs and interactive graphical visualization of geospatial OpenStreetMap datasets.</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-entry">
+      <div>
+        <span class="edu-degree">M.Sc. in Information Science</span> &mdash; <span class="edu-institution">Manipal School of Information Science, MAHE</span>
+      </div>
+      <div>
+        <span class="edu-grade">CGPA: 9.43 / 10.0</span> &nbsp;|&nbsp; <span class="date-location">Jun 2019 – Aug 2021</span>
+      </div>
+    </div>
+    <div class="edu-entry">
+      <div>
+        <span class="edu-degree">B.Sc. in Physics, Computer Science & Mathematics</span> &mdash; <span class="edu-institution">St. Aloysius College Autonomous</span>
+      </div>
+      <div>
+        <span class="edu-grade">CGPA: 6.96 / 10.0</span> &nbsp;|&nbsp; <span class="date-location">Jun 2016 – May 2019</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical & Domain Skills -->
+  <section class="section">
+    <h2 class="section-title">Technical & Domain Skills</h2>
+    <div class="skills-block">
+      <div class="skill-row">
+        <span class="skill-label">Pre-Sales & Solutions:</span>
+        <span class="skill-val">Product Demonstrations, Requirement Discovery, Solution Scoping, Capacity Planning, SOW & Proposals, Client Onboarding</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Telephony & Systems:</span>
+        <span class="skill-val">VoIP, SIP Signaling, Telephony Middleware, PSTN Workflows, WebSockets, Webhooks, CDR Processing, OSI Architecture</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Languages & Web:</span>
+        <span class="skill-val">Golang, Python, Flask, C#, ASP.NET MVC, JavaScript, WordPress Development, HTML5/CSS3, SQL, Pandas</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Developer Experience:</span>
+        <span class="skill-val">Zudoku Developer Portals, OpenAPI / Swagger, REST APIs, Git, Linux, Postman</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-label">Certifications:</span>
+        <span class="skill-val">ISO 13485:2016 & ISO 9001:2015 Internal Auditing (TÜV Rheinland Group &mdash; Feb 2024)</span>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
