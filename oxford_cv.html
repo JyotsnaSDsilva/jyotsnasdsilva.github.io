@@ -53,14 +53,33 @@
       font-size: 8.4pt;
       color: #3b3b3b;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .header-contact a {
-      color: #002147;
-      text-decoration: none;
+      color: #004b99;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-weight: 500;
+    }
+
+    .sep {
+      color: #888888;
+      font-size: 8pt;
+    }
+
+    a.cv-link {
+      color: #004b99;
+      text-decoration: underline;
+      text-underline-offset: 2px;
     }
 
     /* Section Styling */
@@ -250,15 +269,18 @@
     <h1 class="header-name">Jyotsna Dsilva</h1>
     <div class="header-subtitle">Pre-Sales Executive & Solutions Consultant | 5+ Years Pre-Sales & Development</div>
     <div class="header-contact">
-      <span>Mangaluru, Karnataka, India</span>
-      <span>•</span>
-      <span>+91 9591470732</span>
-      <span>•</span>
-      <span><a href="mailto:jyotsnadsilva99@gmail.com">jyotsnadsilva99@gmail.com</a></span>
-      <span>•</span>
-      <span><a href="https://linkedin.com/in/jyotsna-dsilva-749945195">linkedin.com/in/jyotsna-dsilva-749945195</a></span>
-      <span>•</span>
-      <span><a href="https://jyotsnasdsilva.github.io/">jyotsnasdsilva.github.io</a></span>
+      <div class="contact-row">
+        <span>Mangaluru, Karnataka, India</span>
+        <span class="sep">•</span>
+        <a href="tel:+919591470732">+91 9591470732</a>
+        <span class="sep">•</span>
+        <a href="mailto:jyotsnadsilva99@gmail.com">jyotsnadsilva99@gmail.com</a>
+      </div>
+      <div class="contact-row">
+        <a href="https://linkedin.com/in/jyotsna-dsilva-749945195" target="_blank" rel="noopener noreferrer">linkedin.com/in/jyotsna-dsilva-749945195</a>
+        <span class="sep">•</span>
+        <a href="https://jyotsnasdsilva.github.io/" target="_blank" rel="noopener noreferrer">jyotsnasdsilva.github.io</a>
+      </div>
     </div>
   </header>
 
@@ -373,7 +395,7 @@
     </div>
     <div class="project-entry">
       <div class="project-header">
-        <span class="project-name">Geospatial Analytics REST API & Visualization</span>
+        <span class="project-name"><a href="https://github.com/Human-Blast/osm-stats-flask" target="_blank" rel="noopener noreferrer" class="cv-link">Geospatial Analytics REST API & Visualization</a></span>
         <span class="project-tech">Python, Flask REST API, Firebase, Geospatial Data</span>
       </div>
       <p class="project-desc">Engineered a modular REST API using Flask for automated analytical research outputs and interactive graphical visualization of geospatial OpenStreetMap datasets.</p>
